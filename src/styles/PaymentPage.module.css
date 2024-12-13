@@ -1,0 +1,72 @@
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.paymentOption {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.paymentOption:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.radioButton {
+  margin-top: 2px;
+}
+
+.cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.visaIcon {
+  color: #1a73e8;
+}
+
+.mastercardIcon {
+  color: #e63946;
+}
+
+.paypalIcon {
+  color: #0070ba;
+}
+
+.voucherOption {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.voucherOption:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.voucherInput {
+  font-size: 1rem;
+  color: #333;
+}
+
+.proceedButton {
+  background-color: #2575fc;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 20px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

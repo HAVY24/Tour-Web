@@ -1,0 +1,360 @@
+.card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.bookingId {
+  font-size: 14px;
+  color: #777;
+  font-weight: 400;
+}
+
+.status {
+  font-size: 14px;
+  color: #3498db;
+  background-color: #e9f5ff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for See Details button with different states */
+.seeDetails {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.seeDetails.pending {
+  color: #f39c12; /* Orange */
+  background-color: #fff5e6;
+}
+
+.seeDetails.pending:hover {
+  background-color: #f39c12;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.seeDetails.waiting {
+  color: #17a2b8; /* Cyan */
+  background-color: #eafafa;
+}
+
+.seeDetails.waiting:hover {
+  background-color: #17a2b8;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.seeDetails.success {
+  color: #28a745; /* Green */
+  background-color: #eafaf1;
+}
+
+.seeDetails.success:hover {
+  background-color: #28a745;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.seeDetails.cancel {
+  color: #dc3545; /* Red */
+  background-color: #fdeceb;
+}
+
+.seeDetails.cancel:hover {
+  background-color: #dc3545;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.seeDetails.fail {
+  color: #dc35ce; /* Gray */
+  background-color: #f4f1f6;
+}
+
+.seeDetails.fail:hover {
+  background-color: #dc35ce;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #f39c12;
+  border-radius: 50%;
+}
+
+/* In MyBookingPage.module.css */
+.page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.leftSide {
+  width: 40%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructionImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.instructionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.instructionList {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.rightSide {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.pageSubtitle {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.bookingList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.error {
+  color: red;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.noBookingsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.noBookingsImage {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.noBookings {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  max-width: 500px;
+}
+
+.exploreToursButton {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.exploreToursButton:hover {
+  background-color: #0056b3;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Shared styles */
+.status {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Status-specific styles */
+.statusPending {
+  color: #12f3f3; /* Orange */
+  background-color: #fff5e6;
+}
+
+.statusCancel {
+  color: #e74c3c; /* Red */
+  background-color: #fdeceb;
+}
+
+.statusPaid {
+  color: #27ae60; /* Green */
+  background-color: #eafaf1;
+}
+
+/* Default booking list style */
+.bookingList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Scrollable booking list when 5 or more bookings */
+.scrollableList {
+  max-height: 500px; /* Adjust height as per your design */
+  overflow-y: auto;
+  border: 1px solid #ddd; /* Optional: for better visual separation */
+  border-radius: 8px;
+  padding-right: 8px; /* To prevent content from getting cut by the scrollbar */
+}
+
+/* Add custom scroll styling (optional) */
+.scrollableList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollableList::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.scrollableList::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+.scrollableList::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+}
+
+.statusPending {
+  color: #075aff;
+} /* Yellow */
+.statusWaiting {
+  color: #17a2b8;
+} /* Cyan */
+.statusSuccess {
+  color: #28a745;
+} /* Green */
+.statusCancel {
+  color: #dc3545;
+} /* Red */
+.statusFail {
+  color: #dc35ce;
+} /* Gray */
+.deleteButton {
+  position: absolute;
+  height: 40px;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: red; /* You can customize the color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.deleteButton:hover {
+  background-color: darkred; /* On hover color */
+}

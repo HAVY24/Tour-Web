@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./tempSlide.css" />
+</head>
+<body>
+  <div class="slider">
+    <button class="slider--btn slider--btn__prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6" />
+      </svg>
+    </button>
+
+    <div class="slides__wrapper">
+      <div class="slides">
+        <!-- slide 1 -->
+        <div class="slide" data-current>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img
+                class="slide--image"
+                src="https://i.pinimg.com/474x/9f/7f/38/9f7f38ab09b8aee967e9c57c54b7b10e.jpg"
+                alt="Image 1"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide__bg"
+          style="--bg: url(https://i.pinimg.com/474x/9f/7f/38/9f7f38ab09b8aee967e9c57c54b7b10e.jpg); --dir: 0;"
+          data-current
+        ></div>
+
+        <!-- slide 2 -->
+        <div class="slide" data-next>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img
+                class="slide--image"
+                src="https://i.pinimg.com/474x/f9/00/9a/f9009ad62502fbf8a1bea07140a28d6e.jpg"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide__bg"
+          style="--bg: url(https://i.pinimg.com/474x/f9/00/9a/f9009ad62502fbf8a1bea07140a28d6e.jpg); --dir: 1;"
+          data-next
+        ></div>
+
+        <!-- slide 3 -->
+        <div class="slide" data-previous>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img
+                class="slide--image"
+                src="https://i.pinimg.com/474x/c2/9c/76/c29c7662f7d309a729dde2b192d3107e.jpg"
+                alt="Image 3"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide__bg"
+          style="--bg: url(https://i.pinimg.com/474x/c2/9c/76/c29c7662f7d309a729dde2b192d3107e.jpg); --dir: -1;"
+          data-previous
+        ></div>
+      </div>
+      <div class="slides--infos">
+        <!-- Slide Info 1 -->
+        <div class="slide-info" data-current>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text">
+                <span>Brazil</span>
+              </div>
+              <div data-subtitle class="slide-info--text">
+                <span>World's lung</span>
+              </div>
+              <div data-description class="slide-info--text">
+                <span>Enjoy the life</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Info 2 -->
+        <div class="slide-info" data-next>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text">
+                <span>United States</span>
+              </div>
+              <div data-subtitle class="slide-info--text">
+                <span>Hawaii</span>
+              </div>
+              <div data-description class="slide-info--text">
+                <span>Paradise is here</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Info 3 -->
+        <div class="slide-info" data-previous>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text">
+                <span>Argentina</span>
+              </div>
+              <div data-subtitle class="slide-info--text">
+                <span>World Cup's Champion </span>
+              </div>
+              <div data-description class="slide-info--text">
+                <span>Siuuuuuuuuuu??</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider--btn slider--btn__next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="loader">
+    <span class="loader__text">0%</span>
+  </div>
+
+  <div class="support"></div>
+</body>
+<script src="./tempSlide.js" type="module"></script>
+</html>

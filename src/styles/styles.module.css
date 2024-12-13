@@ -1,0 +1,111 @@
+.cardContainer {
+  position: relative;
+  width: 100%;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.cardContainer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow effect */
+}
+
+.cardText {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.cardList {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  z-index: 1;
+}
+
+.cardContainer:hover .cardList {
+  display: block;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+}
+
+.parallax {
+  background-image: url("https://d3omtf52mksen3.cloudfront.net/Static/staticPic.jpg");
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link {
+  font-size: 20px;
+  color: #008080;
+  text-decoration: none;
+}
+
+.parallax {
+  background-image: url("https://d3omtf52mksen3.cloudfront.net/Static/staticPic.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.parallaxContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Thay đổi kích thước và màu sắc của dots */
+.slick-dots li button::before {
+  font-size: 14px; /* Tăng kích thước dots */
+  color: gray; /* Màu mặc định */
+  opacity: 0.7; /* Độ trong suốt */
+}
+
+/* Làm nổi bật dots đang hoạt động */
+.slick-dots .slick-active button::before {
+  color: #3498db; /* Màu nổi bật */
+  opacity: 1;
+}
+
+/* Tùy chỉnh khoảng cách giữa các dots */
+.slick-dots {
+  bottom: -20px; /* Đẩy dots xuống xa hơn */
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Tăng khoảng cách giữa các dots */
+}
+

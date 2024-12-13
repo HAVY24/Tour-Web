@@ -1,0 +1,84 @@
+/* Transactions.module.css */
+.transactionContainer {
+  max-width: 900px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transactions {
+  max-height: 400px; /* Adjust based on your design */
+  overflow-y: scroll; /* Make sure scroll appears if there are many items */
+}
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.transaction:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.transactionHeader {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.transactionBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+.amount {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.amountPositive {
+  color: #4caf50;
+}
+
+.amountNegative {
+  color: #f44336;
+}
+
+.transactionStatus {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  color: #555;
+}
+
+.pending {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.completed {
+  color: #4caf50;
+  font-weight: bold;
+}

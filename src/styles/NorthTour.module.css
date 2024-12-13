@@ -1,0 +1,182 @@
+.tilte_introduction {
+  color: rgba(3, 18, 26, 1);
+  font-size: 40px;
+  line-height: 40px;
+  margin: 18px auto; /* Căn giữa theo chiều ngang */
+  width: 70%; /* Chiều rộng 70% */
+  text-align: left;
+  font-weight: bold; /* Làm chữ in đậm */
+}
+.breadcrumbsLink {
+  color: rgb(255, 165, 0);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.SeeLessMore {
+  width: 70%; /* Chiếm 70% chiều rộng */
+  margin: 18px auto; /* Căn giữa theo chiều ngang */
+  text-align: left; /* Căn giữa nội dung bên trong */
+}
+
+.SeeLessMore p {
+  font-size: 16px; /* Kích thước font chữ */
+  line-height: 1.6; /* Khoảng cách dòng */
+  margin-bottom: 12px; /* Khoảng cách giữa đoạn văn và nút */
+}
+
+.SeeLessMore button {
+  padding: 8px 16px; /* Kích thước nút */
+  background-color: rgba(3, 18, 26, 1); /* Màu nền nút */
+  color: white; /* Màu chữ */
+  border: none; /* Bỏ viền */
+  border-radius: 4px; /* Bo góc */
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+  margin-top: 20px;
+}
+
+.SeeLessMore button:hover {
+  background-color: rgb(255, 165, 0); /* Đổi màu khi hover */
+}
+
+.tipsContainer {
+  display: flex;
+  align-items: center; /* Căn giữa icon và văn bản theo chiều dọc */
+  width: 70%; /* Chiếm 70% chiều rộng */
+  margin: 58px auto 0px auto; /* Căn giữa theo chiều ngang */
+  text-align: left; /* Căn trái nội dung */
+}
+
+.iconCircle {
+  width: 50px; /* Kích thước hình tròn */
+  height: 50px; /* Kích thước hình tròn */
+  background-color: rgb(11, 194, 118); /* Màu nền hình tròn */
+  border-radius: 50%; /* Bo góc thành hình tròn */
+  display: flex;
+  align-items: center; /* Căn giữa icon theo chiều dọc */
+  justify-content: center; /* Căn giữa icon theo chiều ngang */
+  color: white; /* Màu của icon */
+  margin-right: 16px; /* Khoảng cách giữa icon và văn bản */
+  font-size: 24px; /* Kích thước icon */
+}
+
+.text {
+  flex: 1; /* Cho phép văn bản chiếm phần còn lại */
+}
+
+.mainText {
+  font-size: 26px; /* Kích thước lớn hơn cho dòng chính */
+  font-weight: bold; /* Làm đậm dòng chính */
+  margin: 0; /* Xóa khoảng cách mặc định */
+  color: rgb(0, 135, 90);
+}
+
+.subText {
+  font-size: 14px; /* Kích thước nhỏ hơn cho dòng phụ */
+  color: #555; /* Màu chữ nhẹ hơn */
+  margin: 4px 0; /* Khoảng cách giữa hai dòng chữ */
+}
+
+.separator {
+  border: none; /* Bỏ viền mặc định */
+  border-top: 2px dashed #0b0303; /* Tạo gạch ngang đứt */
+  width: 70%; /* Chiếm 70% chiều rộng */
+  margin: 18px auto; /* Căn giữa phần gạch */
+  text-align: center; /* Căn giữa */
+}
+.Taskbox {
+  background-color: rgb(28, 41, 48); /* Màu nền */
+  border-radius: 8px; /* Bo góc */
+  padding: 20px; /* Khoảng cách bên trong */
+  margin: 80px auto; /* Căn giữa và tạo khoảng cách */
+  width: 100%; /* Chiều rộng box */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+}
+.iconTaskCircle {
+  width: 50px; /* Kích thước hình tròn */
+  height: 50px; /* Kích thước hình tròn */
+  background-color: rgb(0, 124, 232); /* Màu nền hình tròn */
+  border-radius: 50%; /* Bo góc thành hình tròn */
+  display: flex;
+  align-items: center; /* Căn giữa icon theo chiều dọc */
+  justify-content: center; /* Căn giữa icon theo chiều ngang */
+  color: white; /* Màu của icon */
+  margin-right: 16px; /* Khoảng cách giữa icon và văn bản */
+  font-size: 24px; /* Kích thước icon */
+}
+.Tasktext {
+  flex: 1; /* Cho phép văn bản chiếm phần còn lại */
+}
+
+.mainTaskText {
+  font-size: 26px; /* Kích thước lớn hơn cho dòng chính */
+  font-weight: bold; /* Làm đậm dòng chính */
+  margin: 0 -2px; /* Xóa khoảng cách mặc định */
+  color: rgb(255, 255, 255);
+}
+
+.subTaskText {
+  font-size: 14px; /* Kích thước nhỏ hơn cho dòng phụ */
+  color: rgb(255, 255, 255); /* Màu chữ nhẹ hơn */
+  margin: 4px 0; /* Khoảng cách giữa hai dòng chữ */
+}
+.Taskseparator {
+  border: none; /* Bỏ viền mặc định */
+  border-top: 2px dashed rgb(205, 208, 209); /* Tạo gạch ngang đứt */
+  width: 70%; /* Chiếm 70% chiều rộng */
+  margin: 18px auto; /* Căn giữa phần gạch */
+  text-align: center; /* Căn giữa */
+}
+.transportContainer {
+  margin: 20px auto;
+  width: 70%;
+  text-align: left;
+}
+
+.transportButtons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.transportButton {
+  background-color: rgb(255, 165, 0);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px 3px;
+}
+
+.transportButton:hover {
+  background-color: rgb(0,124,232);
+}
+
+.transportInfo {
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 18, 26);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+  .tilte_introduction {
+    text-align: center;
+    font-size: 24px; /* Thu nhỏ font chữ */
+    width: 90%; /* Tăng chiều rộng cho dễ đọc */
+    line-height: 36px; /* Điều chỉnh khoảng cách dòng */
+  }
+}
+
+@media (max-width: 480px) {
+  .tilte_introduction {
+    text-align: center;
+    font-size: 20px; /* Thu nhỏ hơn nữa cho màn hình rất nhỏ */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    line-height: 32px;
+  }
+}

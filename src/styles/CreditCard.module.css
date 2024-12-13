@@ -1,0 +1,6 @@
+.rccs {
+    width: 10px;
+    /* Thay đổi kích thước thẻ */
+    height: auto;
+    /* Tự động điều chỉnh chiều cao theo tỉ lệ */
+}

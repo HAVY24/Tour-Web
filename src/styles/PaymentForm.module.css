@@ -1,0 +1,79 @@
+.paymentForm {
+    min-width: 50%;
+    /* Giới hạn chiều rộng form */
+    margin: 20px auto;
+    /* Căn giữa form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #222;
+    font-size: 20px;
+    /* Giảm kích thước tiêu đề */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+    /* Giảm khoảng cách giữa các nhóm input */
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    /* Giảm khoảng cách giữa label và input */
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+
+.input {
+    width: 100%;
+    /* Input vẫn chiếm 100% chiều rộng form */
+    padding: 10px;
+    /* Giảm padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    /* Giảm độ lớn bóng focus */
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    /* Giảm padding nút */
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    /* Giảm kích thước chữ */
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.button:active {
+    background-color: #004b9a;
+    transform: scale(1);
+}

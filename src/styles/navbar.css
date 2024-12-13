@@ -1,0 +1,39 @@
+/* CSS cho dropdown menu */
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+    padding: 10px !important;
+    border-radius: 8px;
+    z-index: 100;
+    position: relative;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.dropdown-menu-content {
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* CSS cho thẻ a bên trong dropdown */
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.3s;
+    margin-left: 10px;
+    font-weight: bold;
+    /* Làm đậm chữ */
+    white-space: nowrap;
+}
+
+/* Hover cho thẻ a */
+.dropdown-menu a:hover {
+    color: #007bff;
+    text-decoration: none;
+    background-color: aliceblue;
+}

@@ -1,0 +1,63 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.noRequests {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.acceptButton,
+.declineButton {
+  margin-right: 15px; /* Adjusted for spacing between buttons */
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px; /* Larger text for better visibility */
+  border-radius: 25px; /* Rounded corners for a smoother look */
+  transition: all 0.3s ease;
+  min-width: 120px; /* Minimum width for uniformity */
+}
+
+.acceptButton:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.declineButton:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+@media (max-width: 768px) {
+  .table {
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .acceptButton,
+  .declineButton {
+    width: 100%; /* Full-width buttons on small screens */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

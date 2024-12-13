@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./tempSlide.css" />
+</head>
+<body>
+  <div class="slider">
+    <button class="slider--btn slider--btn__prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6" />
+      </svg>
+    </button>
+
+    <div class="slides__wrapper">
+      <div class="slides">
+        <!-- slide 1 -->
+        <div class="slide" data-current>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img
+                class="slide--image"
+                src="https://i.pinimg.com/474x/8a/cd/b2/8acdb24ed5338078665e9501026c10ac.jpg"
+                alt="Image 1"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide__bg"
+          style="--bg: url(https://i.pinimg.com/474x/8a/cd/b2/8acdb24ed5338078665e9501026c10ac.jpg); --dir: 0;"
+          data-current
+        ></div>
+
+        <!-- slide 2 -->
+        <div class="slide" data-next>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img
+                class="slide--image"
+                src="https://i.pinimg.com/474x/f9/d8/39/f9d839b246aec05ff070f799fcaac7d3.jpg"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide__bg"
+          style="--bg: url(https://i.pinimg.com/474x/f9/d8/39/f9d839b246aec05ff070f799fcaac7d3.jpg); --dir: 1;"
+          data-next
+        ></div>
+
+        <!-- slide 3 -->
+        <div class="slide" data-previous>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img
+                class="slide--image"
+                src="https://i.pinimg.com/474x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg"
+                alt="Image 3"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide__bg"
+          style="--bg: url(https://i.pinimg.com/474x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg); --dir: -1;"
+          data-previous
+        ></div>
+      </div>
+      <div class="slides--infos">
+        <!-- Slide Info 1 -->
+        <div class="slide-info" data-current>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text">
+                <span>Greenland</span>
+              </div>
+              <div data-subtitle class="slide-info--text">
+                <span>The snow country</span>
+              </div>
+              <div data-description class="slide-info--text">
+                <span>Enjoy the life</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Info 2 -->
+        <div class="slide-info" data-next>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text">
+                <span>Holland</span>
+              </div>
+              <div data-subtitle class="slide-info--text">
+                <span>Beautiful destination</span>
+              </div>
+              <div data-description class="slide-info--text">
+                <span>World of windmill</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Info 3 -->
+        <div class="slide-info" data-previous>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text">
+                <span>France</span>
+              </div>
+              <div data-subtitle class="slide-info--text">
+                <span>Eiffel Tower</span>
+              </div>
+              <div data-description class="slide-info--text">
+                <span>The world's heritage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider--btn slider--btn__next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="loader">
+    <span class="loader__text">0%</span>
+  </div>
+
+  <div class="support"></div>
+</body>
+<script src="./tempSlide.js" type="module"></script>
+</html>
