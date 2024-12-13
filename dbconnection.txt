@@ -1,0 +1,1 @@
+﻿data source=LAPTOP-7TKVHGBS;initial catalog=TourismManagement;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework
